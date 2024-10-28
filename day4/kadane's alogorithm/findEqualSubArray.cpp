@@ -34,6 +34,9 @@ bool divide(vector<int> arr, int size)
     {
         totalSum += arr[i];
     }
+    if(totalSum%2!=0){
+        return 0;
+    }
     // now i am calculating sum of first subarry
     int prefix = 0, suffix = 0;
     for (i = 0; i < size; i++)
